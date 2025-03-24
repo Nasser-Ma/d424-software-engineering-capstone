@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Updated gradient */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px); /* Adds a blur effect */
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Heading Styles */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffdd57; /* Vibrant yellow */
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Paragraph Styles */
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #e0e0e0; /* Light gray */
+            animation: slideIn 1.2s ease-in-out;
+        }
+
+        /* Button Styles */
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            background: #ff6f61; /* Coral pink */
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .download-btn:hover {
+            background: #ff4757; /* Brighter coral pink */
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Background Animation */
+        .bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #6a11cb, #2575fc, #6a11cb, #2575fc); /* Updated gradient */
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+    <div class="container">
+        <h1>D424 Software Engineering Capstone</h1>
+        <p>This is the Vacation Planning Mobile Application that was created as my D424 Capstone Project for Western Governor's University.</p>
+        <p>This App has been developed by: Nasser Maloley</p>
+        <a href="https://gitlab.com/wgu-gitlab-environment/student-repos/nmalol12/d424-software-engineering-capstone/-/blob/Working_Branch/app/release/app-release.apk" download="app-release.apk" class="download-btn">Download APK</a>
+    </div>
+</body>
+
+</html>
